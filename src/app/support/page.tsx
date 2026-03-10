@@ -132,10 +132,10 @@ export default function SupportPage() {
               Can&apos;t find what you&apos;re looking for? We&apos;re happy to help.
             </p>
             <a
-              href="mailto:support@bloomapp.co"
+              href="mailto:support@bloombible.com"
               className="inline-flex items-center gap-2 text-sm font-mono uppercase tracking-[0.1em] text-bloom-accent hover:text-bloom-accent/80 transition-colors"
             >
-              support@bloomapp.co
+              support@bloombible.com
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -337,7 +337,7 @@ export default function SupportPage() {
                 </p>
               </div>
               <a
-                href="mailto:support@bloomapp.co"
+                href="mailto:support@bloombible.com"
                 className="inline-flex items-center justify-center gap-2 bg-bloom-accent text-bloom-card px-6 py-3 rounded-lg text-sm font-mono uppercase tracking-[0.1em] hover:bg-bloom-accent/90 transition-all"
               >
                 <svg

@@ -139,7 +139,7 @@ export default function PrivacyPage() {
               </ul>
               <p>
                 To exercise any of these rights, contact us at{" "}
-                <a href="mailto:support@bloomapp.co">support@bloomapp.co</a>.
+                <a href="mailto:support@bloombible.com">support@bloombible.com</a>.
               </p>
             </Section>
 
@@ -176,7 +176,7 @@ export default function PrivacyPage() {
                 please contact us at:
               </p>
               <p>
-                <a href="mailto:support@bloomapp.co">support@bloomapp.co</a>
+                <a href="mailto:support@bloombible.com">support@bloombible.com</a>
               </p>
             </Section>
           </div>

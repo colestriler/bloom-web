@@ -51,7 +51,7 @@ export default function SupportHeader() {
             ← Home
           </a>
           <a
-            href="mailto:support@bloomapp.co"
+            href="mailto:support@bloombible.com"
             className="text-xs font-mono uppercase tracking-[0.15em] text-bloom-card bg-bloom-accent hover:bg-bloom-accent/90 px-5 py-2.5 rounded-lg transition-all"
           >
             Contact

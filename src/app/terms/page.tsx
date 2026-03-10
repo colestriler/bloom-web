@@ -177,7 +177,7 @@ export default function TermsPage() {
                 If you have questions about these Terms, please contact us at:
               </p>
               <p>
-                <a href="mailto:support@bloomapp.co">support@bloomapp.co</a>
+                <a href="mailto:support@bloombible.com">support@bloombible.com</a>
               </p>
             </Section>
           </div>
