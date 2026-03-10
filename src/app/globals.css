@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/* ── Bloom Design Tokens (matching iOS AppTheme.swift) ── */
+@theme {
+  /* Background — warm cream/parchment */
+  --color-bloom-bg: #EDE3D4;
+  --color-bloom-bg-deep: #E8DEC9;
+
+  /* Card */
+  --color-bloom-card: #F5EDDD;
+  --color-bloom-card-border: #BFB39E;
+
+  /* Text — dark brown tones */
+  --color-bloom-text: #292114;
+  --color-bloom-text-secondary: #665947;
+  --color-bloom-text-tertiary: #948570;
+
+  /* Accent — muted earth tones */
+  --color-bloom-accent: #736347;
+  --color-bloom-accent-secondary: #9E5945;
+
+  /* Divider */
+  --color-bloom-divider: #BFB39E;
+
+  /* Fonts */
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Fira Code", monospace;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #EDE3D4 0%, #E8DEC9 100%);
+  color: #292114;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgba(115, 99, 71, 0.2);
+  color: #292114;
+}
+
+/* ── Vintage divider ── */
+.vintage-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.vintage-divider::before,
+.vintage-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #BFB39E;
+}
+
+/* ── Animations ── */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out both;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
