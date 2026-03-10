@@ -29,13 +29,17 @@ export default function Footer() {
 
           {/* Links */}
           <div className="flex items-center gap-6">
-            {["Privacy", "Terms", "Support"].map((link) => (
+            {[
+              { label: "Privacy", href: "/privacy" },
+              { label: "Terms", href: "/terms" },
+              { label: "Support", href: "/support" },
+            ].map((link) => (
               <a
-                key={link}
-                href="#"
+                key={link.label}
+                href={link.href}
                 className="text-xs font-mono uppercase tracking-[0.1em] text-bloom-text-tertiary hover:text-bloom-text transition-colors"
               >
-                {link}
+                {link.label}
               </a>
             ))}
           </div>
